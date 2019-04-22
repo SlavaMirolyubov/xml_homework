@@ -3,17 +3,14 @@
            elementFormDefault="qualified"
            xmlns="http://www.example.com"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <!--root element-->
   <xs:element name="products" type="productsType"/>
 
-  <!--root complex type-->
   <xs:complexType name="productsType">
     <xs:sequence minOccurs="0" maxOccurs="unbounded">
       <xs:element name="category" type="categoryType" />
     </xs:sequence>
   </xs:complexType>
 
-  <!--category complex type-->
   <xs:complexType name="categoryType">
     <xs:sequence minOccurs="0" maxOccurs="unbounded">
       <xs:element name="subcategory" type="subcategoryType"   />
@@ -21,7 +18,6 @@
     <xs:attribute name="name" type="xs:string" use="required"/>
   </xs:complexType>
 
-  <!--subcategory complex type-->
   <xs:complexType name="subcategoryType">
     <xs:sequence minOccurs="0" maxOccurs="unbounded">
       <xs:element name="item" type="itemType"/>
@@ -29,13 +25,10 @@
     <xs:attribute name="name" type="xs:string" use="required"/>
   </xs:complexType>
 
-  <!--single Item complex type-->
   <xs:complexType name="itemType">
     <xs:sequence>
-      <!--manufacturer of product-->
       <xs:element name="manufacturer" type="xs:string"/>
 
-      <!--model of product-->
       <xs:element name="model" >
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -44,7 +37,6 @@
         </xs:simpleType>
       </xs:element>
 
-      <!--date of product manufacture-->
       <xs:element name="date_of_manufacture"  >
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -53,7 +45,6 @@
         </xs:simpleType>
       </xs:element>
 
-      <!--color validation with #ff0000 #1A3 and etc.  matches-->
       <xs:element name="color" >
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -61,7 +52,6 @@
         </xs:simpleType>
       </xs:element>
 
-      <!--price of goods-->
       <xs:element name="price" default="0.0" >
         <xs:simpleType>
           <xs:restriction base="xs:decimal">
@@ -70,7 +60,6 @@
         </xs:simpleType>
       </xs:element>
 
-      <!--amount of goods-->
       <xs:element name="amount" default="0" >
         <xs:simpleType>
           <xs:restriction base="xs:integer">
