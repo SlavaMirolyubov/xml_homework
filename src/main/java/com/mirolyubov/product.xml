@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products
+        xmlns="http://www.example.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.com product.xsd">
+    <category name="fridges">
+        <subcategory name="twinCam">
+            <item>
+                <manufacturer>Samsung</manufacturer>
+                <model>GL123</model>
+                <date_of_manufacture>23-10-2018</date_of_manufacture>
+                <color>White</color>
+                <price>18500</price>
+                <amount>4</amount>
+            </item>
+            <item>
+                <manufacturer>LG</manufacturer>
+                <model>BC996</model>
+                <date_of_manufacture>29-02-2016</date_of_manufacture>
+                <color>Gray</color>
+                <price>16385</price>
+                <amount>2</amount>
+            </item>
+        </subcategory>
+        <subcategory name="oneCam">
+            <item>
+                <manufacturer>Bosh</manufacturer>
+                <model>JA349</model>
+                <date_of_manufacture>04-06-2012</date_of_manufacture>
+                <color>Silver</color>
+                <price>15000</price>
+                <amount>17</amount>
+            </item>
+            <item>
+                <manufacturer>Hitachi</manufacturer>
+                <model>SV896</model>
+                <date_of_manufacture>29-07-2008</date_of_manufacture>
+                <color>Dark_gray</color>
+                <price>434.78</price>
+                <amount>22</amount>
+            </item>
+        </subcategory>
+    </category>
+    <category name="stove">
+        <subcategory name="embed">
+            <item>
+                <manufacturer>Bosh</manufacturer>
+                <model>AP980</model>
+                <date_of_manufacture>23-11-2014</date_of_manufacture>
+                <color>Black</color>
+                <price>17500</price>
+                <amount>1</amount>
+            </item>
+            <item>
+                <manufacturer>Gas</manufacturer>
+                <model>KO156</model>
+                <date_of_manufacture>28-02-2017</date_of_manufacture>
+                <color>Silver</color>
+                <price>20000</price>
+                <amount>87</amount>
+            </item>
+        </subcategory>
+    </category>
+</products>
